@@ -20,7 +20,9 @@ shinyUI(fluidPage(
     sidebarPanel(
       fileInput("tcxfile",
                 "Choose a tcx file",
-                accept = "*.tcx")
+                accept = "*.tcx"),
+      actionButton("trackMap", label = "Show track"),
+      actionButton("demoMap", label = "Show demo map")
     ),
     
     # Show a plot of the generated distribution
